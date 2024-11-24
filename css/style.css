@@ -1688,4 +1688,34 @@ padding-top: 12px;
 
 }
 
+.styled-list {
+    /* 对div本身进行样式设置，如果需要的话 */
+    margin: 20px auto; /* 居中，设置外边距 */
+    padding: 15px; /* 设置内边距 */
+    max-width: 600px; /* 设置最大宽度 */
+    background-color: #fff; /* 设置背景颜色 */
+    border-radius: 10px; /* 设置圆角边框 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.styled-list ul {
+    list-style-type: none; /* 去掉默认的项目符号 */
+    padding: 0; /* 去掉默认的内边距 */
+    margin: 0; /* 去掉默认的外边距 */
+    font-family: 'Helvetica, Arial, sans-serif'; /* 设置字体，确保兼容性 */
+}
+
+.styled-list li {
+    font-weight: bold; /* 设置加粗 */
+    margin-bottom: 10px; /* 设置每个列表项的下边距，使列表间隔明显 */
+    padding: 10px; /* 设置列表项的内边距，增加点击区域 */
+    background-color: #f7f7f7; /* 设置背景颜色，使列表项更突出 */
+    border-radius: 5px; /* 设置圆角边框 */
+    transition: background-color 0.3s ease; /* 设置背景颜色变化的过渡效果 */
+}
+
+.styled-list li:hover {
+    background-color: #e1e1e1; /* 设置鼠标悬停时的背景颜色变化 */
+}
+
  

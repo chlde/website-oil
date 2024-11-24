@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Welcome to LowareGroup</title>
+<title>固维石油</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="" />
 <meta name="author" content="http://webthemez.com" />
@@ -22,6 +22,12 @@
 
 </head>
 <body>
+<div style="position: fixed; right: 0px; bottom: 0px;">
+	<a href="https://work.weixin.qq.com/kfid/kfc974c3acb95b0f4b7">
+		<img src="img/wechat_customer.png"
+			 width="330" height="330" style="z-index: 99999999; border-radius: 15px;" alt="联系我们" />
+	</a>
+</div>
 <div id="wrapper">
 	<!-- start header -->
 	<header>
@@ -37,15 +43,15 @@
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li> 
-						<li><a href="services.html">Services</a></li>
+                        <li class="active"><a href="index.html">首页</a></li>
+						<li><a href="services.html">服务介绍</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 	</header>
 	<!-- end header -->
-	<section id="featured">
+	<section id="featured" style="z-index: -1">
 	 
 	<!-- Slider -->
         <div id="main-slider" class="flexslider">
@@ -53,19 +59,22 @@
               <li>
                 <img src="img/slides/1.jpg?a=1" alt="" />
                 <div class="flex-caption">
-                    <h3>LoWare™ Group</h3>
+                    <h3>固维石油</h3>
+					<h2>完善的行业标准，提供一流解决方案</h2>
                 </div>
               </li>
               <li>
                 <img src="img/slides/2.jpg?a=1" alt="" />
                 <div class="flex-caption">
-					<h3>LoWare™ Group</h3>
+					<h3>固维石油</h3>
+					<h2>完善的租赁流程，解决项目应急需求</h2>
                 </div>
               </li>
               <li>
                 <img src="img/slides/3.jpg?a=1" alt="" />
                 <div class="flex-caption">
-					<h3>LoWare™ Group</h3>
+					<h3>固维石油</h3>
+					<h2>优秀的供应链能力，为项目保驾护航</h2>
                 </div>
               </li>
             </ul>
@@ -73,27 +82,31 @@
 	<!-- end slider -->
  
 	</section>
-	<div class="content_white">
-  <h2>Welcome to our Company Website!</h2>
-  <p>As the world's leading supplier of surface modification materials for industrial equipment, Wellware can solve your problems.</p>
-</div>
-	<section id="content">
-	<div class="container">
-	     <div class="row">
-			<div class="col-md-8">
-				<!-- Heading and para -->
-				<div class="block-heading-two">
-					<h3><span>Why Choose Us?</span></h3>
+	<div class="content_white styled-list">
+	  <h2>固维石油竭诚为您服务</h2>
+	  <ul>
+		  <li>设备租赁</li>
+		  <li>设备维护</li>
+		  <li>设备维修</li>
+	  	  <li>项目方案设计</li>
+	  </ul>
+	</div>
+	<section id="content" style="z-index: -1">
+		<div class="container">
+			 <div class="row">
+				<div class="col-md-8">
+					<!-- Heading and para -->
+					<div class="block-heading-two">
+						<h3><span>我们的优势</span></h3>
+					</div>
+					<ul>
+						<li>业内高强度的材料标准</li>
+						<li>完善的解决方案</li>
+						<li>优秀的供应链技术</li>
+					</ul>
 				</div>
-				<ul>
-					<li>We can provide the most advanced wear-resistant materials.</li>
-					<li>We can provide the most suitable solutions.</li>
-					<li>We can provide the best services.</li>
-				</ul>
 			</div>
 		</div>
-	</div>
-	
 	</section>
 	<div class="testimonial-area">
     <div class="testimonial-solid">
@@ -141,7 +154,7 @@
 				<div class="col-lg-6">
 					<div class="copyright">
 						<p>
-							&copy; Target 2021 All right reserved.
+							&copy; Target <span id="year"></span> All right reserved.
 						</p>
 					</div>
 				</div>
@@ -165,5 +178,15 @@
 <script src="js/animate.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/owl-carousel/owl.carousel.js"></script>
+<script>
+	// 获取当前日期
+    var currentDate = new Date();
+
+    // 获取年份
+    var currentYear = currentDate.getFullYear();
+
+    // 将当前年份显示在HTML元素中
+    document.getElementById('year').textContent = currentYear;
+</script>
 </body>
 </html>
